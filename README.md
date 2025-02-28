@@ -1,7 +1,7 @@
 # Product Search Agent 🚀
 
 ## 📌 Overview
-The **Product Search Agent Web App** is an AI-powered web application that allows users to search for product details, including price comparisons, from multiple online sources. It leverages advanced retrieval methods and Large Language Models (LLMs) to fetch, analyze, and present product information in a structured manner.
+The **Product Search Agent** is an AI-powered web application that allows users to search for product details, including price comparisons, from multiple online sources. It leverages advanced retrieval methods and Large Language Models (LLMs) to fetch, analyze, and present product information.
 
 ## 🌟 Features
 - 🔍 **Product Information Retrieval**: Fetches product details from multiple e-commerce platforms.
