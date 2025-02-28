@@ -1,10 +1,14 @@
 <h1 align="center">🛍️ Product Search Agent</h1>
 
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
   <img src="https://img.shields.io/badge/Agno-FF9800?style=for-the-badge&logo=agnosystems&logoColor=white">
   <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=white">
+</p>
+
 
 
 ## 📌 Overview
