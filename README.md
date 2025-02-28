@@ -1,1 +1,1 @@
-# Gmail-Assistant-Project
+# Product Search Agent Project
