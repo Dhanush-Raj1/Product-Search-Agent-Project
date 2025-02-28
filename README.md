@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge">
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
   <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=white">
+  <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=white">
 </p>
 
 
