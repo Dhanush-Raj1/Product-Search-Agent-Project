@@ -2,12 +2,12 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img src="https://img.shields.io/badge/Agno-FF9800?style=for-the-badge&logo=agnosystems&logoColor=white">
-  <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
-  <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=white">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
+  <img src="https://img.shields.io/badge/Agno-FF9800?style=for-the-badge&logo=agnosystems&logoColor=black&labelColor=white&color=blue">
+  <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge&labelColor=black&color=yellow">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=black&labelColor=white&color=purple">
+  <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=black&labelColor=white&color=green">
+  <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=orange">
 </p>
 
 
