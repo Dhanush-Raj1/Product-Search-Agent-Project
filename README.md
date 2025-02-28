@@ -27,7 +27,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 ## 🛠 Tech Stack
 | Technology | Description |
 |------------|-------------|
-| **Python** | Backend development |
+| **Python** | Programming language used  |
 | **Flask** | Web framework for UI and API integration |
 | **HTML & CSS** | Frontend design and styling |
 | **Agno AI (formerly Phidata)** | AI framework for building agents and tools |
