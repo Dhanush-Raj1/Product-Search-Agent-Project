@@ -1,0 +1,9 @@
+dotenv
+agno
+duckduckgo-search
+exa-py
+google-search-results
+googlesearch-python 
+pycountry
+Flask
+Markdown
