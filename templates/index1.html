@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Product Search Agent <i class="fas fa-search"></i></h1>
+            <p class="caption">Find the best prices for products across popular e-commerce platforms with AI-powered search</p>
+        </header>
+
+        <div class="search-container">
+            <form method="POST" action="/">
+                <div class="input-group">
+                    <input type="text" id="query" name="query" placeholder="Search for a product (e.g., 'Find the price of iPhone 14 Pro')" required>
+                    <button type="submit" id="search-button">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        {% if error %}
+        <div class="error-container">
+            <div class="error-message">{{ error }}</div>
+        </div>
+        {% endif %}
+
+        {% if response %}
+        <div class="response-container">
+            <div class="response-header">
+                <h2>Results</h2>
+                <button onclick="copyToClipboard()" title="Copy to clipboard">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </div>
+            <div class="response-content">
+                {{ response | safe }}
+            </div>
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>Powered by Raj-AI - Searches Amazon, Flipkart and more</p>
+        </footer>
+    </div>
+
+    <script>
+        // Minimal JavaScript just for copy functionality
+        function copyToClipboard() {
+            const responseText = document.querySelector('.response-content').innerText;
+            navigator.clipboard.writeText(responseText).then(function() {
+                const copyButton = document.querySelector('.response-header button i');
+                copyButton.className = 'fas fa-check';
+                setTimeout(function() {
+                    copyButton.className = 'fas fa-copy';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search Agent</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Search Agent</h1>
+        <form method="POST">
+            <input type="text" name="task" placeholder="Enter your search query..." required>
+            <button type="submit">Search</button>
+        </form> 
+
+        {% if response %}
+            <div class="response">
+                <h2>Search Results:</h2>
+                <div class="response-content">
+                    {{ response | safe }}
+                </div>
+            </div>
+        {% endif %}
+
+        {% if error %}
+            <div class="error">
+                <p>{{ error }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

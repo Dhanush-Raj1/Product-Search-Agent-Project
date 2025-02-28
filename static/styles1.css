@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #4a6cf7;
+    --primary-dark: #3a56e0;
+    --secondary-color: #6c757d;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --accent-color: #e83e8c; /* Accent color for response headings */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7ff;
+    color: var(--dark-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Space for footer */
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+}
+
+h1 i {
+    margin-left: 10px;
+    font-size: 2rem;
+}
+
+.caption {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-container {
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    display: flex;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    background: white;
+}
+
+#query {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+#search-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0 1.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#search-button:hover {
+    background-color: var(--primary-dark);
+}
+
+#search-button i {
+    margin-right: 8px;
+}
+
+.error-container {
+    margin-bottom: 2rem;
+}
+
+.error-message {
+    background-color: var(--danger-color);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+}
+
+.response-container {
+    margin-bottom: 2rem;
+}
+
+.response-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    margin-bottom: 1.5rem;
+}
+
+.response-header h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.response-header button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.response-header button:hover {
+    opacity: 0.8;
+}
+
+.response-content {
+    padding: 0 1rem;
+}
+
+/* Styling for markdown content */
+.response-content h2 {
+    color: var(--accent-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.response-content h3 {
+    color: var(--accent-color);
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.response-content h4 {
+    color: var(--accent-color);
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.response-content ul, .response-content ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.response-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.response-content a:hover {
+    text-decoration: underline;
+}
+
+.response-content p {
+    margin-bottom: 1rem;
+}
+
+.response-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.response-content table, .response-content th, .response-content td {
+    border: 1px solid #ddd;
+}
+
+.response-content th, .response-content td {
+    padding: 8px;
+    text-align: left;
+}
+
+.response-content th {
+    background-color: #f2f2f2;
+}
+
+.response-content pre {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.response-content code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+footer {
+    margin-left: 430px;
+    margin-top: 3rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    /*width: 100%;*/
+    padding: 1rem 0;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+    
+    #search-button {
+        padding: 0.8rem;
+    }
+    
+    body {
+        padding-bottom: 100px;
+    }
+}
