@@ -92,11 +92,11 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 ---
 
-## 🌐 Usage Guide
-1️⃣ Open the web app in your browser.
-2️⃣ Enter a search query (e.g., *Find the price of the book 'Atomic Habits' by James Clear*).
-3️⃣ Click the **Search** button.
-4️⃣ View the retrieved product details and price comparisons.
+## 🌐 Usage Guide  
+1️⃣ Open the web app in your browser.  
+2️⃣ Enter a search query (e.g., *Find the price iphone 14 pro*).  
+3️⃣ Click the **Search** button.  
+4️⃣ View the retrieved product details and price comparisons.  
 
 ---
 
@@ -119,7 +119,6 @@ The app will be available at: **http://127.0.0.1:5000/**
 ---
 
 
----
 
 ## 📄 License
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
@@ -127,8 +126,5 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 ---
 
 
----
-
-**⭐ Star this repo if you found it helpful!** 🌟
 
 
