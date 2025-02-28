@@ -9,7 +9,6 @@ The **Product Search Agent Web App** is an AI-powered web application that allow
 - 🌍 **Web Search Capabilities**: Utilizes AI-powered search tools for accurate results.
 - 🖥 **Modern UI**: A clean, user-friendly interface built with Flask and HTML/CSS.
 - 📄 **Structured Response**: Provides formatted responses with product details, pricing, and best recommendations.
-- 🔒 **Environment Variables Support**: Uses `.env` for API keys and configurations.
 
 ---
 
@@ -19,28 +18,15 @@ The **Product Search Agent Web App** is an AI-powered web application that allow
 | **Python** | Backend development |
 | **Flask** | Web framework for UI and API integration |
 | **HTML & CSS** | Frontend design and styling |
-| **Agno AI (formerly Phidata)** | AI framework for building agents |
-| **LangChain** | Framework for AI-powered search and retrieval |
+| **Agno AI (formerly Phidata)** | AI framework for building agents and tools |
 | **Together AI** | LLM for natural language processing |
-| **FAISS** | Vector database for fast retrieval |
 | **Exa Tools** | Web search tool for retrieving product details |
+| **SerpApiTools** | Search engine results page to find product informations |
+| **GoogleSearchTools** | Google Search tools to search for products |
 
 ---
 
-## 🧰 Tools & Libraries Used
-- **Flask** – Web framework
-- **Agno AI** – AI Agent framework
-- **LangChain** – LLM-powered retrieval
-- **Together AI** – LLM model provider
-- **FAISS** – Vector search index
-- **ExaTools** – Web search tool
-- **DuckDuckGoTools** – Alternative search tool
-- **GoogleSearchTools** – Google search integration
-- **SerpApiTools** – SERP API for search results
-- **dotenv** – Environment variable management
-- **HTML, CSS** – Frontend UI
 
----
 
 ## 📂 Project Structure
 ```
@@ -121,13 +107,6 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Follow these steps:
-1️⃣ Fork the repo
-2️⃣ Create a new branch (`feature-xyz`)
-3️⃣ Commit changes (`git commit -m "Added new feature"`)
-4️⃣ Push to the branch (`git push origin feature-xyz`)
-5️⃣ Open a Pull Request
 
 ---
 
@@ -136,10 +115,6 @@ This project is licensed under the **MIT License** – see the [LICENSE](LICENSE
 
 ---
 
-## 📬 Contact
-📧 **Email**: your-email@example.com  
-🌐 **GitHub**: [yourusername](https://github.com/yourusername)  
-💼 **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile)  
 
 ---
 
