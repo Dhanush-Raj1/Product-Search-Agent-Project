@@ -2,6 +2,14 @@
   <h1>🛍️ Product Search Agent</h1>
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Agno-FF9800?style=for-the-badge&logo=agnosystems&logoColor=white">
+  <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
+  <img src="https://img.shields.io/badge/HTML-E44D26?style=for-the-badge&logo=html5&logoColor=white">
+</p>
+
 ## 📌 Overview
 The **Product Search Agent** is an AI-powered web application that allows users to search for product details, including price comparisons, from multiple online sources. It leverages advanced retrieval methods and Large Language Models (LLMs) to fetch, analyze, and present product information.
 
