@@ -1,9 +1,9 @@
 <p align="center">
-  <h1>🛍️ Product Search Agent</h1>
+  <img src="https://readme-typing-svg.herokuapp.com?size=30&center=true&vCenter=true&width=500&height=60&lines=🛍️+Product+Search+Agent" alt="Product Search Agent">
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="40" width="70">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" height="30" width="70">
   <img src="https://img.shields.io/badge/Agno-FF9800?style=for-the-badge&logo=agnosystems&logoColor=white">
   <img src="https://img.shields.io/badge/TogetherAI-A142F4?style=for-the-badge">
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white">
