@@ -10,10 +10,12 @@
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=orange">
 </p>
 
-
+<br><br>
 
 ## 📌 Overview
 The **Product Search Agent** is an AI-powered web application that allows users to search for product details, including price comparisons, from multiple online sources. It leverages advanced retrieval methods and Large Language Models (LLMs) to fetch, analyze, and present product information.
+
+<br><br>
 
 ## 🌟 Features
 - 🔍 **Product Information Retrieval**: Fetches product details from multiple e-commerce platforms.
@@ -22,7 +24,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 - 🖥 **Modern UI**: A clean, user-friendly interface built with Flask and HTML/CSS.
 - 📄 **Structured Response**: Provides formatted responses with product details, pricing, and best recommendations.
 
----
+<br><br>
 
 ## 🛠 Tech Stack
 | Technology | Description |
@@ -36,9 +38,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 | **SerpApiTools** | Search engine results page to find product informations |
 | **GoogleSearchTools** | Google Search tools to search for products |
 
----
-
-
+<br><br>
 
 ## 📂 Project Structure
 ```
@@ -54,7 +54,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 │── .env  # Environment variables
 ```
 
----
+<br><br>
 
 ## 🚀 Installation & Setup
 
@@ -91,7 +91,7 @@ python app.py
 
 The app will be available at: **http://127.0.0.1:5000/**
 
----
+<br><br>
 
 ## 🌐 Usage Guide  
 1️⃣ Open the web app in your browser.  
@@ -99,7 +99,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 3️⃣ Click the **Search** button.  
 4️⃣ View the retrieved product details and price comparisons.  
 
----
+<br><br>
 
 ## 📸 Screenshots
 ### 🔵 Home Page
@@ -108,7 +108,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 ### 🟢 Search Results
 ![Results](https://via.placeholder.com/800x400.png?text=Search+Results)
 
----
+<br><br>
 
 ## 📌 Future Enhancements
 ✅ Add more e-commerce websites for price comparison.
@@ -117,15 +117,12 @@ The app will be available at: **http://127.0.0.1:5000/**
 ✅ Optimize LLM prompts for better response accuracy.
 ✅ Add user authentication for personalized recommendations.
 
----
+<br><br>
 
-
+## 🤝 Contributing
+💡 Have an idea? Feel free to contribute or open an issue and pull requests! 
 
 ## 📄 License
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
-
-
-
-
