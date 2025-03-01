@@ -1,5 +1,5 @@
 <h1 align="center">🛍️ Product Search Agent</h1>
-
+<h3 align="center"> AI-powered Product search agent that can search for products across ecommerce web and ecommerce platforms. </h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
@@ -30,13 +30,13 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 | Technology | Description |
 |------------|-------------|
 | **Python** | Programming language used  |
-| **Flask** | Web framework for UI and API integration |
-| **HTML & CSS** | Frontend design and styling |
 | **Agno AI (formerly Phidata)** | AI framework for building agents and tools |
-| **Together AI** | LLM for natural language processing |
 | **Exa Tools** | Web search tool for retrieving product details |
 | **SerpApiTools** | Search engine results page to find product informations |
 | **GoogleSearchTools** | Google Search tools to search for products |
+| **Together AI** | LLM for natural language processing |
+| **Flask** | Web framework for UI and API integration |
+| **HTML & CSS** | Frontend design and styling |
 
 <br><br>
 
