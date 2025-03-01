@@ -6,7 +6,6 @@
     <title>Product Search Agent</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 </head>
 <body>
     <div class="container">
@@ -16,15 +15,20 @@
         </header>
 
         <div class="search-container">
-            <form method="POST" action="/">
+            <form method="POST" action="/" id="search-form">
                 <div class="input-group">
-                    <input type="text" id="query" name="query" placeholder="Search for a product (e.g., 'Find the price of iPhone 14 Pro')" required>
+                    <input type="text" id="query" name="query" placeholder="Search for a product..." required>
                     <button type="submit" id="search-button">
                         <i class="fas fa-search"></i>
                         <span>Search</span>
                     </button>
                 </div>
             </form>
+        </div>
+
+        <div class="loading-container" id="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Processing your request...</p>
         </div>
 
         {% if error %}
@@ -37,9 +41,6 @@
         <div class="response-container">
             <div class="response-header">
                 <h2>Results</h2>
-                <button onclick="copyToClipboard()" title="Copy to clipboard">
-                    <i class="fas fa-copy"></i>
-                </button>
             </div>
             <div class="response-content">
                 {{ response | safe }}
@@ -48,22 +49,14 @@
         {% endif %}
 
         <footer>
-            <p>Powered by Raj-AI - Searches Amazon, Flipkart and more</p>
+            <p>Powered by Raj-AI - Searches Amazon, Flipkart, and more</p>
         </footer>
     </div>
 
     <script>
-        // Minimal JavaScript just for copy functionality
-        function copyToClipboard() {
-            const responseText = document.querySelector('.response-content').innerText;
-            navigator.clipboard.writeText(responseText).then(function() {
-                const copyButton = document.querySelector('.response-header button i');
-                copyButton.className = 'fas fa-check';
-                setTimeout(function() {
-                    copyButton.className = 'fas fa-copy';
-                }, 2000);
-            });
-        }
+        document.getElementById("search-form").addEventListener("submit", function() {
+            document.getElementById("loading-spinner").style.display = "block";  // Show spinner
+        });
     </script>
 </body>
 </html>
