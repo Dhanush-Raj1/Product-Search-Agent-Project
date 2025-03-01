@@ -103,10 +103,10 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 ## 📸 Screenshots
 ### 🔵 Home Page
-<img src="readme_images/home_page.PNG" height="400" width="700">
+<img src="readme_images/home_page.PNG" height="400" width="600">
 <br>
 ### 🟢 Search Results
-<img src="readme_images/results.PNG" height="400" width="700">
+<img src="readme_images/results.PNG" height="400" width="600">
 
 <br>
 
