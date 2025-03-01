@@ -13,12 +13,12 @@
 
 <br>
 
-## 📌 Overview
+# 📌 Overview
 The **Product Search Agent** is an AI-powered web application that allows users to search for product details, including price comparisons, from multiple online sources. It leverages various agentic tools and Large Language Models (LLMs) to fetch, analyze, and present product information.
 
 <br>
 
-## 🌟 Features
+# 🌟 Features
 - 🔍 **Product Information Retrieval**: Fetches product details from multiple e-commerce platforms.
 - 💰 **Price Comparison**: Compares prices from Amazon, Flipkart, and other supported sites.
 - 🌍 **Web Search Capabilities**: Utilizes AI-powered search tools for accurate results.
@@ -27,7 +27,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 
 <br>
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 | Technology | Description |
 |------------|-------------|
 | **Python** | Programming language used  |
@@ -41,7 +41,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 
 <br>
 
-## 📂 Project Structure
+# 📂 Project Structure
 ```
 /📂Product-Search-Agent-WebApp
 │── /📂static
@@ -57,7 +57,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 
 <br>
 
-## 🚀 Installation & Setup
+# 🚀 Installation & Setup
 
 ### 1️⃣ Clone the Repository
 ```sh
@@ -94,7 +94,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-## 🌐 Usage Guide  
+# 🌐 Usage Guide  
 1️⃣ Open the web app in your browser.  
 2️⃣ Enter a search query (e.g., *Find the price iphone 14 pro*).  
 3️⃣ Click the **Search** button.  
@@ -102,7 +102,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-## 📸 Screenshots
+# 📸 Screenshots
 ### 🔵 Home Page
 <img src="readme_images/home_page.PNG" height="500" width="700">  
 <br>  
@@ -112,7 +112,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-## 📌 Future Enhancements
+# 📌 Future Enhancements
 ✅ Add more e-commerce websites for price comparison.
 ✅ Implement real-time currency conversion.
 ✅ Improve UI with a more interactive design.
@@ -121,10 +121,10 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-## 🤝 Contributing
+# 🤝 Contributing
 💡 Have an idea? Feel free to contribute or open an issue and pull requests! 
 
-## 📄 License
+# 📄 License
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 ---
