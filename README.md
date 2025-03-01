@@ -103,10 +103,10 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 ## 📸 Screenshots
 ### 🔵 Home Page
-![Home Page](https://via.placeholder.com/800x400.png?text=Product+Search+Agent+Home)
-
+<img src="readme_images/home_page.PNG" height="400" width="900">
+<br>
 ### 🟢 Search Results
-![Results](https://via.placeholder.com/800x400.png?text=Search+Results)
+<img src="readme_images/results.PNG" height="400" width="900">
 
 <br>
 
