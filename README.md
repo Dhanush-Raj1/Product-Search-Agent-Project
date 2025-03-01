@@ -60,7 +60,7 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/yourusername/Product-Search-Agent-WebApp.git](https://github.com/Dhanush-Raj1/Product-Search-Agent-Project.git
+git clone https://github.com/Dhanush-Raj1/Product-Search-Agent-Project.git
 cd Product-Search-Agent-WebApp
 ```
 
