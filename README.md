@@ -1,5 +1,5 @@
 <h1 align="center">🛍️ Product Search Agent</h1>
-<h3 align="center"> AI-powered Product search agent that can search for products across ecommerce web and ecommerce platforms. </h3>
+<h3 align="center"> End to End AI Agent Project: "AI agent that can search for information related to various products across ecommerce platforms and the web. </h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
