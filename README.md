@@ -42,10 +42,10 @@ The **Product Search Agent** is an AI-powered web application that allows users 
 
 ## 📂 Project Structure
 ```
-/Product-Search-Agent-WebApp
-│── /static
+/📂Product-Search-Agent-WebApp
+│── /📂static
 │   ├── styles.css  # CSS for UI styling
-│── /templates
+│── /📂templates
 │   ├── index.html  # Main webpage template
 │── app.py  # Flask backend
 │── agent_builder.py  # AI agent logic
