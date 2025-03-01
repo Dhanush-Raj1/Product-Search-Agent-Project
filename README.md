@@ -112,13 +112,13 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 <br>
 
-# 📌 Future Enhancements
-✅ Add more e-commerce websites for price comparison.
-✅ Implement real-time currency conversion.
-✅ Improve UI with a more interactive design.
-✅ Optimize LLM prompts for better response accuracy.
-✅ Add user authentication for personalized recommendations.
-
+# 📌 Future Enhancements  
+✅ Add more e-commerce websites for price comparison.  
+✅ Implement real-time currency conversion.  
+✅ Improve UI with a more interactive design.  
+✅ Optimize LLM prompts for better response accuracy.  
+✅ Add user authentication for personalized recommendations.  
+  
 <br>
 
 # 🤝 Contributing
