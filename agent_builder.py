@@ -24,8 +24,8 @@ class ProductAgent:
     """
     def build_agent(self)->Agent:
         try:
-            llm_model = Together(id="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free", 
-                        api_key=Together_api)
+            llm_model = Together(id="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",  #meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
+                        api_key=Together_api)                                          #deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
             
             web_search_agent = Agent(
                 name="Product search agent",
@@ -33,7 +33,7 @@ class ProductAgent:
                 model=llm_model,
                 tools=[
                     #DuckDuckGoTools(), 
-                    ExaTools(include_domains=["https://www.amazon.in/", "https://www.flipkart.com/"]), #include_domains=["amazon.in", "flipkart.in", "walmart.com", "ebay.com"]
+                    ExaTools(include_domains=["https://www.amazon.in/", "https://www.flipkart.com/", "https://www.indiamart.com/"]), 
                     SerpApiTools(api_key=os.getenv("SERPAPI_API_KEY")),
                     GoogleSearchTools(),
                 ],
@@ -51,15 +51,18 @@ class ProductAgent:
                         - Convert prices to INR if in other currencies.
 
                     3. Search Scope:
-                        - Websites to search: amazon.in, flipkart.in.
+                        - Websites to search: amazon.in, flipkart.in. indiamart.com
 
                     4. Formatting:
+                        - You must display the information in bullet points as a list especially the prices 
                         - Structure responses using markdown.
                         - Provide a final summary and best price recommendations.
 
                     IMPORTANT NOTE: USE ALL THE TOOLS MENTIONED IN THE AGENT.
                     IMPORTANT NOTE: SEARCH THROUGH VARIOUS ECOMMERCE WEBSITES MENTIONED IN SEARCH SCOPE.
                     IMPORTANT NOTE: CONVERT THE PRICES TO INR IF IN OTHER CURRENCIES.
+                    IMORTANT NOTE: DISPLAY THE INFORMATION IN BULLET POINTS AS A LIST.
+                    IMPORTNAT NOTE: DO NOT DISPLAY YOUR REASONING IN THE RESPONSE.
                 """,
                 goal="Retrieve information from online sources and represent the findings.",
                 expected_output="""
@@ -69,6 +72,7 @@ class ProductAgent:
 
                     ## Price Comparison:
                         - List down the prices of the product from different websites. 
+                        - DISPLAY THE PRICE INFORMATION IN BULLET POINTS AS A LIST.
                         - Differentiate between the prices for different types of the product, 
                             For Examples : books can be categoried into paperback, hardcover, kindle etc...
                         - Compare between the prices of the product from different websites.
@@ -82,7 +86,8 @@ class ProductAgent:
 
                     ## Sources: 
                         - Include the sources of your findings. 
-                        - Mention links to the websites you have referred to.
+                        - Mention links to the sources of your findings.
+                        - Include the links to the websites from where the information is retrieved.
                 """,
                 #reasoning=True,
                 structured_outputs=True,
