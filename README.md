@@ -1,5 +1,4 @@
-<h1 align="center">🛍️ Product Search Agent</h1>
-<h3 align="center"> End to End AI Agent Project: "AI agent that can search for information related to various products across ecommerce platforms and the web" </h3>
+<h1 align="center">🛍️ AI-Powered Product Search Agent</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=black&labelColor=white&color=red">
@@ -10,6 +9,9 @@
   <img src="https://img.shields.io/badge/CSS-663399?style=for-the-badge&logo=CSS&logoColor=black&labelColor=white&color=orange">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=black&labelColor=white&color=cyan" />
 </p>
+
+<h3 align="center"> End to End AI Agent Project: "AI agent that can search for information related to various products across ecommerce platforms and the web" </h3>
+
 
 <br>
 
