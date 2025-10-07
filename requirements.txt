@@ -10,3 +10,4 @@ Markdown == 3.7
 google-genai == 1.41.0
 baidusearch == 1.0.3
 anthropic == 0.69.0
+gunicorn
