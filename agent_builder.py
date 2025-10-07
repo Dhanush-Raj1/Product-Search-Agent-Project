@@ -18,6 +18,7 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 Together_api= os.getenv("TOGETHER_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 EXA_API_KEY= os.getenv("EXA_API_KEY")
+SERP_API_KEY= os.getenv("SERP_API_KEY")
 
 
 @dataclass
@@ -32,6 +33,7 @@ class ProductAgent:
                         #api_key=Together_api)                                          #deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
             
             llm_model = Gemini(id="gemini-2.5-flash-lite",
+                               api_key=GOOGLE_API_KEY,
                                temperature=0.1,
                                max_output_tokens=2048,) 
             
@@ -46,7 +48,7 @@ class ProductAgent:
                     #ExaTools(include_domains=[
                         #"amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
                         #]),
-                    SerpApiTools(api_key=os.getenv("SERPAPI_API_KEY")),
+                    SerpApiTools(api_key=SERP_API_KEY),
                     GoogleSearchTools(),
                     BaiduSearchTools(),
                 ],
