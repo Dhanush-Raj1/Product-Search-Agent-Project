@@ -7,9 +7,8 @@ from agno.tools.exa import ExaTools
 from agno.tools.serpapi import SerpApiTools
 from agno.tools.googlesearch import GoogleSearchTools
 from agno.tools.baidusearch import BaiduSearchTools
-from agno.models.together import Together
-from agno.models.google import Gemini 
 from agno.models.openrouter import OpenRouter
+from agno.models.google import Gemini
 
 from dataclasses import dataclass
 from dotenv import load_dotenv
@@ -18,7 +17,7 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 Together_api= os.getenv("TOGETHER_API_KEY")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-os.environ["EXA_API_KEY"] = os.getenv("EXA_API_KEY")
+EXA_API_KEY= os.getenv("EXA_API_KEY")
 
 
 @dataclass
@@ -32,11 +31,11 @@ class ProductAgent:
             #llm_model = Together(id="meta-llama/Llama-3.3-70B-Instruct-Turbo-Free",  #meta-llama/Llama-3.3-70B-Instruct-Turbo-Free
                         #api_key=Together_api)                                          #deepseek-ai/DeepSeek-R1-Distill-Llama-70B-free
             
-            #llm_model = Gemini(id="gemini-2.5-flash-lite",
-                               #temperature=0.1,
-                               #max_output_tokens=2048,) 
+            llm_model = Gemini(id="gemini-2.5-flash-lite",
+                               temperature=0.1,
+                               max_output_tokens=2048,) 
             
-            llm_model = OpenRouter(id="meta-llama/llama-4-maverick:free")      #meta-llama/llama-3.3-8b-instruct:free
+            # llm_model = OpenRouter(id="meta-llama/llama-4-maverick:free")      #meta-llama/llama-3.3-8b-instruct:free  
 
             web_search_agent = Agent(
                 name="Product search agent",
@@ -44,11 +43,11 @@ class ProductAgent:
                 model=llm_model,
                 tools=[
                     DuckDuckGoTools(), 
-                    ExaTools(include_domains=[
-                        "amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
-                        ]),
+                    #ExaTools(include_domains=[
+                        #"amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
+                        #]),
                     SerpApiTools(api_key=os.getenv("SERPAPI_API_KEY")),
-                    #GoogleSearchTools(),
+                    GoogleSearchTools(),
                     BaiduSearchTools(),
                 ],
                 description=[
@@ -58,14 +57,15 @@ class ProductAgent:
                     YOU MUST FOLLOW THIS EXACT SEQUENCE - DO NOT SKIP ANY STEP:
     
                     Step 1: Use DuckDuckGoTools to search for the product
-                    Step 2: Use Exatools to search for the product
-                    Step 3: Use SerpApiTools to search for the same product
+                    Step 2: Use SerpApiTools to search for the same product
+                    Step 3: Use GoogleSearchTools to search for the same product
                     Step 4: Use BaiduSearchTools to search for the same product
                     Step 5: ONLY AFTER completing all searches, compile the results
 
                     MANDATORY RULES:
                     - You MUST call DuckDuckGoTools at least once
                     - You MUST call SerpApiTools at least once  
+                    - You MUST call GoogleSearchTools at least once
                     - You MUST call BaiduSearchTools at least once
                     - Each tool must search on amazon.in, flipkart.com, and indiamart.com and other relevant sites, sellers as well
                     - Do NOT skip any tool even if you think you have enough information
