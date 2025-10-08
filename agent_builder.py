@@ -44,13 +44,13 @@ class ProductAgent:
                 role="Search the web for price related information of various products and represent the findings.",
                 model=llm_model,
                 tools=[
-                    DuckDuckGoTools(), 
+                    #DuckDuckGoTools(), 
                     # ExaTools(include_domains=[
                     #     "amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
                     #     ]),
                     SerpApiTools(api_key=SERP_API_KEY),
-                    #GoogleSearchTools(),
-                    BaiduSearchTools(), 
+                    GoogleSearchTools(),
+                    #BaiduSearchTools(), 
                 ],
                 description=[
                     "You are a product search expert that finds CURRENT and VERIFIED pricing information."
