@@ -37,7 +37,7 @@ class ProductAgent:
                                temperature=0.1,
                                max_output_tokens=2048,) 
             
-            # llm_model = OpenRouter(id="meta-llama/llama-4-maverick:free")      #meta-llama/llama-3.3-8b-instruct:free  
+            #llm_model = OpenRouter(id="meta-llama/llama-4-maverick:free")      
 
             web_search_agent = Agent(
                 name="Product search agent",
@@ -45,12 +45,12 @@ class ProductAgent:
                 model=llm_model,
                 tools=[
                     DuckDuckGoTools(), 
-                    #ExaTools(include_domains=[
-                        #"amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
-                        #]),
+                    # ExaTools(include_domains=[
+                    #     "amazon.in", "flipkart.com", "indiamart.com", "snapdeal.com", "myntra.com", "pricehistory.in", "pricebefore.com"
+                    #     ]),
                     SerpApiTools(api_key=SERP_API_KEY),
-                    GoogleSearchTools(),
-                    BaiduSearchTools(),
+                    #GoogleSearchTools(),
+                    BaiduSearchTools(), 
                 ],
                 description=[
                     "You are a product search expert that finds CURRENT and VERIFIED pricing information."
