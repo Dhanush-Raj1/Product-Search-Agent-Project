@@ -113,7 +113,8 @@ The app will be available at: **http://127.0.0.1:5000/**
 [Access the web app](https://product-search-agent.up.railway.app/)
   
 1️⃣ Open the web app in your browser.  
-2️⃣ Enter a search query:  You can search for any specific product prices, just simply enter the query in the search tab.    
+2️⃣ Enter a search query:    
+You can search for any specific product prices, just simply enter the query in the search tab.      
  >     - Find the price of the book 'Start with why' written by Simon sinek  
  >     - Find me the price of 'Redmi note 13 pro'  
 3️⃣ Click the **Search** button.      
