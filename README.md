@@ -12,7 +12,19 @@
 
 <h3 align="center"> End to End AI Agent Project: "AI agent that can search for information related to various products across ecommerce platforms and the web" </h3>
 
+<br>
 
+## 🚀 Live Applicaiton
+🌐 The application is deployed and live  
+  
+👉 [Access the web app here](https://product-search-agent.up.railway.app/)  
+  
+> [!NOTE]  
+> The web app may take 1-2 minutes to load.  
+  
+> [!TIP]  
+> For the best experience, please refer to the [Usage Guide](#-usage-guide) section below to learn how to navigate and use the web app effectively.
+  
 <br>
 
 # 📌 Overview
@@ -97,8 +109,13 @@ The app will be available at: **http://127.0.0.1:5000/**
 <br>
 
 # 🌐 Usage Guide  
+
+[Access the web app](https://product-search-agent.up.railway.app/)
+  
 1️⃣ Open the web app in your browser.  
-2️⃣ Enter a search query (e.g., *Find the price iphone 14 pro*).  
+2️⃣ Enter a search query:
+    - "Find the price of iphone 14 pro"
+    - "Find the price of the book 'Start with why' written by Simon sinek"
 3️⃣ Click the **Search** button.  
 4️⃣ View the retrieved product details and price comparisons.  
 
