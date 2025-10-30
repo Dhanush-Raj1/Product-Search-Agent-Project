@@ -113,10 +113,10 @@ The app will be available at: **http://127.0.0.1:5000/**
 [Access the web app](https://product-search-agent.up.railway.app/)
   
 1️⃣ Open the web app in your browser.  
-2️⃣ Enter a search query:
-    - "Find the price of iphone 14 pro"
-    - "Find the price of the book 'Start with why' written by Simon sinek"
-3️⃣ Click the **Search** button.  
+2️⃣ Enter a search query:  
+    - "Find the price of iphone 14 pro"  
+    - "Find the price of the book 'Start with why' written by Simon sinek"  
+3️⃣ Click the **Search** button.    
 4️⃣ View the retrieved product details and price comparisons.  
 
 <br>
