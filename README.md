@@ -17,7 +17,7 @@
 ## 🚀 Live Applicaiton
 🌐 The application is deployed and live  
   
-👉 [Access the web app here](https://product-search-agent.up.railway.app/)  
+👉 [Access the web app here](https://product-search-agent-project.onrender.com)  
   
 > [!NOTE]  
 > The web app may take 1-2 minutes to load.  
@@ -110,7 +110,7 @@ The app will be available at: **http://127.0.0.1:5000/**
 
 # 🌐 Usage Guide  
 
-[Access the web app](https://product-search-agent.up.railway.app/)
+[Access the web app](https://product-search-agent-project.onrender.com)
   
 1️⃣ Open the web app in your browser.  
 2️⃣ Enter a search query:    
