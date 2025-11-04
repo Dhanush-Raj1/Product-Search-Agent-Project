@@ -1,33 +1,128 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Search Agent</title>
+    <title>Product Search Agent - AI-Powered Price Comparison</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 <body>
     <div class="container">
-        <h1>Product Search Agent</h1>
-        <form method="POST">
-            <input type="text" name="task" placeholder="Enter your search query..." required>
-            <button type="submit">Search</button>
-        </form> 
+        <header>
+            <h1>Product Search Agent<i class="fas fa-bolt"></i></h1>
+            <p class="caption">Discover the best prices across multiple e-commerce platforms with AI-powered intelligent search</p>
+        </header>
 
-        {% if response %}
-            <div class="response">
-                <h2>Search Results:</h2>
-                <div class="response-content">
-                    {{ response | safe }}
-                </div>
+        <div class="features">
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>AI-Powered</h3>
+                <p>Advanced algorithms find exactly what you're looking for</p>
             </div>
-        {% endif %}
+            <div class="feature-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Price Compare</h3>
+                <p>Real-time comparison across top platforms</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bolt"></i>
+                <h3>Lightning Fast</h3>
+                <p>Get results in seconds, not minutes</p>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <form method="POST" action="/" id="search-form">
+                <div class="input-group">
+                    <input type="text" id="query" name="query" placeholder="Search for any product..." required>
+                    <button type="submit" id="search-button">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="loading-container" id="loading-spinner" style="display: none;">
+            <div class="spinner"></div>
+            <p>Searching across platforms...</p>
+        </div>
 
         {% if error %}
-            <div class="error">
-                <p>{{ error }}</p>
-            </div>
+        <div class="error-container">
+            <div class="error-message">{{ error }}</div>
+        </div>
         {% endif %}
+
+        {% if response %}
+        <div class="response-container">
+            <div class="response-header">
+                <h2>Search Results</h2>
+            </div>
+            <div class="response-content">
+                {{ response | safe }}
+            </div>
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>Powered by Dhanush Raj-AI · Amazon · Flipkart · Multiple Platforms</p>
+        </footer>
     </div>
+
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function() {
+            document.getElementById("loading-spinner").style.display = "block";
+        });
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Enhanced formatting for response content
+        document.addEventListener('DOMContentLoaded', function() {
+            const responseContent = document.querySelector('.response-content');
+            if (responseContent) {
+                const platformNames = ['Amazon.in', 'Flipkart.com', 'IndiaMART.com', 'Snapdeal.com'];
+                
+                // Find all h3 elements
+                const h3Elements = Array.from(responseContent.querySelectorAll('h3'));
+                
+                h3Elements.forEach((h3) => {
+                    // Check if this h3 is a platform name
+                    const isPlatform = platformNames.some(name => h3.textContent.trim().includes(name));
+                    
+                    if (isPlatform) {
+                        // Create a wrapper div
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'platform-section';
+                        
+                        // Insert wrapper before h3
+                        h3.parentNode.insertBefore(wrapper, h3);
+                        
+                        // Move h3 into wrapper
+                        wrapper.appendChild(h3);
+                        
+                        // Move all following siblings until we hit another h2, h3, or end
+                        let nextElement = wrapper.nextElementSibling;
+                        while (nextElement && nextElement.tagName !== 'H2' && nextElement.tagName !== 'H3') {
+                            const current = nextElement;
+                            nextElement = nextElement.nextElementSibling;
+                            wrapper.appendChild(current);
+                        }
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
