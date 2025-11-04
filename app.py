@@ -24,7 +24,7 @@ def index():
         except Exception as e:
             raise CustomException(e)
     
-    return render_template('index1.html', response=response, error=error)
+    return render_template('index.html', response=response, error=error)
 
 if __name__ == "__main__":
     app.run(debug=True)
