@@ -216,7 +216,7 @@ class ProductAgent:
                 tool_call_limit=20,
                 #reasoning=True,
                 structured_outputs=True,
-                show_tool_calls=True,
+                show_tool_calls=False,
                 markdown=True      
             )
 
