@@ -128,9 +128,13 @@ You can search for any specific product prices, just simply enter the query in t
 <br>  
   
 ### 🟢 Search Results  
-<img src="readme_images/results.PNG" height="500" width="700">
+<img src="readme_images/result_page_1.PNG" height="500" width="700">
+<br>
+
+<img src="readme_images/result_page_2.PNG" height="500" width="700">
 
 <br>
+
 
 # 📌 Future Enhancements  
 ✅ Add more e-commerce websites for price comparison.  
